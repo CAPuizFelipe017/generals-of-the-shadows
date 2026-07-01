@@ -1,0 +1,105 @@
+.ranking-page {
+  animation: fadeIn 0.5s ease;
+}
+
+.ranking-page h1 {
+  color: var(--color-highlight);
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.ranking-page .subtitle {
+  text-align: center;
+  color: var(--color-text);
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.ranking-container {
+  overflow-x: auto;
+}
+
+.ranking-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(124, 58, 237, 0.1);
+  border: 2px solid var(--color-secondary);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.ranking-table thead {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+}
+
+.ranking-table th {
+  color: var(--color-light);
+  padding: 1rem;
+  text-align: left;
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+.ranking-table tbody tr {
+  border-bottom: 1px solid rgba(124, 58, 237, 0.3);
+  transition: all 0.3s ease;
+}
+
+.ranking-table tbody tr:hover {
+  background: rgba(124, 58, 237, 0.25);
+}
+
+.ranking-table td {
+  padding: 1rem;
+  color: var(--color-text);
+  font-size: 0.95rem;
+}
+
+.position {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--color-highlight);
+}
+
+.name {
+  color: var(--color-light);
+  font-weight: 600;
+}
+
+.power {
+  color: #10b981;
+  font-weight: 600;
+}
+
+.contributions {
+  color: var(--color-highlight);
+}
+
+.rank-1,
+.rank-2,
+.rank-3 {
+  background: rgba(192, 132, 252, 0.1);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .ranking-table {
+    font-size: 0.85rem;
+  }
+
+  .ranking-table th,
+  .ranking-table td {
+    padding: 0.75rem 0.5rem;
+  }
+}
